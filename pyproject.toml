@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "noisy-speech-eval"
+version = "0.3.1"
+description = ""
+authors = ["Julien Dupuis <julien.dupuis-desroches.1@ens.etsmtl.ca>", "Pierre André Ménard <pierre-andre.menard@etsmtl.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "~2.2.2"
+pylangacq = "~0.19.1"
+python-iso639 = "~2024.4.27"
+
+# core
+jiwer = "~3.0.4"
+rapidfuzz = "~3.9.0"
+
+# visualisation
+seaborn = "~0.13.2"
+tabulate = "~0.9.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "~8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

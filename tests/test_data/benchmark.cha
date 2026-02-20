@@ -1,0 +1,19 @@
+@UTF8
+@Begin
+@Languages:	eng
+@Participants:	PAR Simple Participant, INV Investigator Investigator
+@Options:	multi
+@ID:	eng|Simple|PAR|22;00.|female|aphasia||Participant|||
+@ID:	eng|Simple|INV|||||Investigator|||
+*INV:	one two three
+*PAR:	four five six
+*INV:	&~nonword
+*PAR:	&+fragment
+*INV:	&-filler
+*PAR:	(...)
+*INV:	spelling@k
+*PAR:	grammatical jargon error [+ gram] [+ jar]
+*INV:	wordError [* s]
+*PAR:	repeat [/] repeat
+*INV:	<repeated words> [//] repeating words
+@End

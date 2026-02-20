@@ -1,0 +1,19 @@
+@UTF8
+@PID:	11312/a-00056008-1
+@Window:	223_1038_834_879_-1_-1_64376_0_64376_0
+@Begin
+@Languages:	eng
+@Participants:	PAR Simple Participant, INV Investigator
+@Options:	multi
+@ID:	eng|Simple|PAR|22;00.|female|aphasia||Participant|||
+@ID:	eng|Simple|INV|||||Investigator|||
+@G:	Speech
+*INV:	one +!? +..? . 0000_45000
+%wor:	one +!? +..? 0000_45000 .
+%mor:	co|one +!? +..? .
+%gra:	1|0|INCROOT +!? +..? 2|1|PUNCT
+*PAR:	two +//? . 45000_60000
+%wor:	two +//? 45000_60000 .
+%mor:	co|two +//? .
+%gra:	1|0|INCROOT +//? 2|1|PUNCT
+@End

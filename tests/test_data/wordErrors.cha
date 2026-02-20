@@ -1,0 +1,24 @@
+@UTF8
+@PID:	11312/a-00056008-1
+@Window:	223_1038_834_879_-1_-1_64376_0_64376_0
+@Begin
+@Languages:	eng
+@Participants:	PAR Simple Participant, INV Investigator
+@Options:	multi
+@ID:	eng|Simple|PAR|22;00.|female|aphasia||Participant|||
+@ID:	eng|Simple|INV|||||Investigator|||
+@G:	Speech
+*INV:	so [*] ‡ I'm just [* s] [* d] gonna [* p:w] [* d] be asking [* n:k] you to [* n:k] do [* n:k] <some speaking> [/] some [* d] speaking . 630_3180
+%wor:	so [*] 630_810 ‡ I'm 810_930 just [* s] [* d] 930_1100 gonna [* p:w] [* d] 1100_1260 be 1260_1430 asking [* n:k] 1430_1840 you 1840_2100 to [* n:k] 2100_2300 do [* n:k] 2300_2490 <some [* d] 2490_2680 speaking 2680_3180> [/] some 3180_3280 speaking 3380_3480.
+%mor:	co|so beg|beg pro:sub|I~aux|be&1S adv|just part|go&PRESP~inf|to
+	aux|be part|ask-PRESP pro:per|you inf|to v|do pro:indef|some
+	part|speak-PRESP .
+%gra:	1|0|BEG 2|1|BEGP 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|9|INF 8|9|AUX
+	9|6|COMP 10|9|OBJ 11|12|INF 12|9|COMP 13|12|OBJ 14|12|XJCT
+	15|6|PUNCT
+*PAR:	okay [* s:per] [* m] brakod@n . 3830_4060
+%wor:	okay [* s:per] [* m] 3830_3960 brakod@n 3930_4060.
+%mor:	co|okay brakod .
+%gra:	1|0|INCROOT 2|1|OBJ 3|2|PUNCT
+%com:	remainder of video not transcribed
+@End

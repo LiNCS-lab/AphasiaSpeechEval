@@ -1,0 +1,20 @@
+@UTF8
+@Begin
+@Languages:	eng
+@Participants:	PAR Simple Participant, PAR Investigator
+@Options:	multi
+@ID:	eng|Simple|PAR|22;00.|female|aphasia||Participant|||
+@ID:	eng|Simple|PAR|||||Investigator|||
+*INV:	www .
+%wor:	www .
+%mor:	.
+*INV:	yyy .
+%wor:	yyy .
+%mor:	.
+*PAR:	xxx .
+%wor:	xxx .
+%mor:	.
+*PAR:	xxx .
+%wor:	xxx .
+%mor:	.
+@End

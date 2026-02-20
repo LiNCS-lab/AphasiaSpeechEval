@@ -1,0 +1,21 @@
+@UTF8
+@PID:	11312/a-00056008-1
+@Window:	223_1038_834_879_-1_-1_64376_0_64376_0
+@Begin
+@Languages:	eng
+@Participants:	PAR Simple Participant, INV Investigator
+@Options:	multi
+@ID:	eng|Simple|PAR|22;00.|female|aphasia||Participant|||
+@ID:	eng|Simple|INV|||||Investigator|||
+@G:	Speech
+*INV:	one two .
+%mor:	co|one co|two .
+*INV:	three four five six .
+%mor:	co|three co|four co|five co|six .
+*PAR:	This is a sentence . 
+%mor:	co|This co|is co|a co|sentence .
+*PAR:	Here is another one to test . 
+%mor:	co|Here co|is co|another co|one co|to co|test .
+*PAR:	Third sentence with nineteen words total for this participant . 
+%mor:	co|Third co|sentence co|with co|nineteen co|words co|total co|for co|this co|participant . 
+@End
