@@ -2,7 +2,7 @@ import os
 import unittest
 import pandas as pd
 
-from noisy_speech_eval import (
+from aphasia_speech_eval import (
     Session,
     Benchmark,
     combined_asr_performance,

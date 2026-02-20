@@ -77,6 +77,7 @@ def process_chat(
     )
     languages = chat.languages()
     header_media = chat.headers()[0]["Media"] if "Media" in chat.headers()[0] else None
+    header_comments = chat.headers()[0]["Comment"] if "Comment" in chat.headers()[0] else None
     header_options = (
         chat.headers()[0]["Options"] if "Options" in chat.headers()[0] else None
     )
@@ -249,7 +250,7 @@ def process_chat(
                 tiers=u.tiers,
             )
         )
-    return utterances, participants, languages, header_media, header_options
+    return utterances, participants, languages, header_comments, header_media, header_options
 
 
 def _tokenize(text):

@@ -1,5 +1,5 @@
 import os
-import noisy_speech_eval as nse
+import aphasia_speech_eval as ase
 
 if __name__ == "__main__":
 
@@ -20,16 +20,16 @@ if __name__ == "__main__":
         print(f"Processing session {session}")
 
         # # Create session objects for both reference and predicted files
-        truth = nse.Session.from_chat(f"{REF_DIR}{session}.cha")
-        pred = nse.Session.from_chat(f"{PRED_DIR}{session}.cha")
+        truth = ase.Session.from_chat(f"{REF_DIR}{session}.cha")
+        pred = ase.Session.from_chat(f"{PRED_DIR}{session}.cha")
 
         # Create a benchmark object to compare the two sessions. Append the benchmark object to the list of benchmarks
-        benchmark = nse.Benchmark(reference=truth, prediction=pred, corpus="APROCSA")
+        benchmark = ase.Benchmark(reference=truth, prediction=pred, corpus="APROCSA")
         # print(benchmark.calculate_asr_performance())
         benchmarks.append(benchmark)
 
     # Combine the results of all the ASR benchmarks and plot the results
-    df, plt, df_meta = nse.combined_asr_performance(benchmarks)
+    df, plt, df_meta = ase.combined_asr_performance(benchmarks)
     plt.savefig("asr_out_ALL.png")
     plt.clf()
 

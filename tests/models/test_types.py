@@ -1,5 +1,5 @@
 import unittest
-from noisy_speech_eval.models.types import (
+from aphasia_speech_eval.models.types import (
     TokenType,
     WordType,
     PauseType,

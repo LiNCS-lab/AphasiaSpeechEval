@@ -1,7 +1,7 @@
-from noisy_speech_eval import Session, TokenType
+from aphasia_speech_eval import Session, TokenType
 import os
 import unittest
-from noisy_speech_eval.models.session import *
+from aphasia_speech_eval.models.session import *
 from tests.test_data import test_data_cwd
 
 

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "noisy-speech-eval"
+name = "aphasia-speech-eval"
 version = "0.3.1"
 description = ""
 authors = ["Julien Dupuis <julien.dupuis-desroches.1@ens.etsmtl.ca>", "Pierre André Ménard <pierre-andre.menard@etsmtl.ca>"]

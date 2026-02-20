@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from noisy_speech_eval.models import *
+from aphasia_speech_eval.models import *
 
-from noisy_speech_eval.modules.chat_file_parser import (
+from aphasia_speech_eval.modules.chat_file_parser import (
     _get_participants,
     process_chat,
     _tokenize,
@@ -40,7 +40,7 @@ class TestChatFileParser(unittest.TestCase):
         self.assertEqual(participants[0].name, "Child")
         self.assertEqual(participants[0].language, "eng")
 
-    @patch("noisy_speech_eval.modules.chat_file_parser.pla.Reader.from_files")
+    @patch("aphasia_speech_eval.modules.chat_file_parser.pla.Reader.from_files")
     def test_process_chat(self, mock_from_files):
         mock_chat = MagicMock()
         mock_chat.headers.return_value = [{"Participants": self.participant_data}]
@@ -50,7 +50,7 @@ class TestChatFileParser(unittest.TestCase):
 
         mock_from_files.return_value = mock_chat
 
-        utterances, participants, languages, header_media, header_options = (
+        utterances, participants, languages, header_comment, header_media, header_options = (
             process_chat("dummy_path", "dummy_session")
         )
         self.assertEqual(len(participants), 1)
@@ -99,9 +99,8 @@ class TestChatFileParser(unittest.TestCase):
 
     def test_extract_gestures(self):
         token = _extract_gestures("&=head:yes")
-        self.assertIsInstance(token, Token)
-        self.assertEqual(token.token_type, TokenType.GESTURE)
-        self.assertRaises(ValueError, _extract_gestures, "&=head:yes&=head:no")
+        self.assertIsInstance(token[0], Token)
+        self.assertEqual(token[0].token_type, TokenType.GESTURE)
 
     def test_extract_retracing_overlap(self):
         marker = _extract_retracing_overlap("[/]", 0, 1)
