@@ -4,6 +4,14 @@
 
 **Aphasia Speech Eval** is a Python library developed to evaluate the performance of Automatic Speech Recognition (ASR) systems on noisy conversational speech, particularly from speakers with speech disorders. The library is focused on the analysis of speech with disfluencies such as stuttering, repetitions, and extended pauses, providing metrics to evaluate ASR accuracy and reliability in different scenarios.
 
+## Citation
+
+This library was published as part of the following article:
+
+
+Dupuis Desroches, J., Ménard, P. A., & Ratté, S. (2026). Evaluating ASR for aphasia: a framework for clinically relevant transcription performance. Aphasiology, 1–26. https://doi.org/10.1080/02687038.2026.2621235
+
+
 ## Features
 
 The library is built around the CHAT format from the Child Language Data Exchange System (CHILDES), widely used within the TalkBank project for representing and analyzing conversational data. This ensures that the library is compatible with established formats and can be easily integrated into existing research workflows. 
